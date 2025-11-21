@@ -1,0 +1,96 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+
+/* Estilos do Cabeçalho */
+.main-header {
+    position: relative; /* Necessário para posicionar o overlay */
+    background-image: url('doc/capoeira.jpg'); /* <<-- Caminho correto para a imagem dentro da pasta 'doc' */
+    background-size: cover; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    color: #ffee00;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1; /* Garante que o conteúdo fique acima do overlay */
+}
+
+/* Camada escura (overlay) sobre a imagem de fundo */
+.main-header::before {
+    content: ''; /* Pseudo-elementos precisam de 'content' */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor preta com 60% de opacidade */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo do header (título, busca) */
+}
+
+
+
+
+#main-title {
+    margin: 0;
+    font-size: 2.5rem;
+    position: relative; /* Garante que o título fique sobre o overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a leitura */
+}
+
+
+
+
+/* Estilos do container de busca */
+.search-container {
+    margin-top: 1rem;
+    position: relative; /* Garante que a busca fique sobre o overlay */
+}
+
+
+
+
+.search-container input[type="text"] {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+
+.search-container button {
+    padding: 0.5rem 1rem;
+    background-color: #ffee00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilos do Rodapé */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+
+.footer-links a {
+    color: #d9a404;
+    text-decoration: none;
+}
