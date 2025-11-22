@@ -14,7 +14,7 @@ body {
 /* Estilos do Cabeçalho */
 .main-header {
     position: relative; /* Necessário para posicionar o overlay */
-    background-image: url('doc/capoeira.jpg'); /* <<-- Caminho correto para a imagem dentro da pasta 'doc' */
+    background-image: url('./capoeira.jpg'); /* <<-- Caminho correto para a imagem dentro da pasta 'doc' */
     background-size: cover; /* Faz a imagem cobrir todo o cabeçalho */
     background-position: center; /* Centraliza a imagem */
     color: #ffee00;
